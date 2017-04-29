@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"/>
+		<title>百度新闻手机端</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/jikePart8.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="cf">
+				<a href="#" class="logo">
+					<span class="iconfont">&#xe67c</span>
+				</a>
+				<a href="#" class="logo">
+					<span class="iconfont">&#xe60c</span>
+				</a>
+				<a href="#" class="logo">
+					<span class="iconfont">&#x3466</span>
+				</a>
+				<a href="#" class="logo">
+					<span class="iconfont">&#xe609</span>
+				</a>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a class="active" href="#">精选</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">百家</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">本地</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">娱乐</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">社会</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">军事</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">女人</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">搞笑</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">互联网</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">科技</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">更多</a>
+						<i></i>
+					</li>
+				</ul>
+			</nav>
+			<article class="news-main">
+				<!--动态创建新闻-->
+				<ul class="news-lists">
+					<!--<li class="news-list">
+						<div class="newsimg">
+							<img src="img/timg.jpg" width="100%"/>
+						</div>
+						<div class="newscontent">
+							<h1>患癌大姐爱上健身 癌症消失</h1>
+							<p>
+								<span class="newstime">2016年1月10日</span>
+								<span class="newssrc">极客学院</span>
+							</p>
+						</div>
+					</li>-->
+				</ul>
+			</article>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var deviceWidth=$('body').width();
+				$("nav li").each(function(index,item){
+					if($(this).find('a').html().split('').length>2){
+						$(this).width(deviceWidth/3);
+					}else{
+						$(this).width(deviceWidth/6);
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript" src="js/moment.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>

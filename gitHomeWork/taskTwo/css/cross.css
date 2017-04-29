@@ -1,0 +1,63 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.top {
+	background: #d7e643;
+	margin-left: -50px;
+	margin-top: -150px;
+	-webkit-box-shadow: 5px 5px 15px rgba(192, 178, 52, .6);
+	box-shadow: 5px 5px 15px rgba(192, 178, 52, .6);
+}
+
+.left {
+	background: #ceebfb;
+	margin-left: -150px;
+	margin-top: -50px;
+	-webkit-box-shadow: -3px 5px 15px rgba(0, 148, 126, .6);
+	box-shadow: -3px 5px 15px rgba(0, 148, 126, .6);
+}
+
+.middle {
+	background: #1395b5;
+	margin-left: -50px;
+	margin-top: -50px;
+	display: -webkit-box;
+	display:-moz-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	-webkit-box-shadow: 2px 2px 3px 3px rgba(0, 100, 222, .6) inset;
+	box-shadow: 2px 2px 3px 3px rgba(0, 100, 222, .6) inset;
+}
+
+.right {
+	background: #14dac9;
+	margin-left: 50px;
+	margin-top: -50px;
+	-webkit-box-shadow: 3px 5px 15px rgba(0, 199, 194, .6);
+	box-shadow: 3px 5px 15px rgba(0, 199, 194, .6);
+}
+
+.bottom {
+	background: #e8e0d3;
+	margin-left: -50px;
+	margin-top: 50px;
+	-webkit-box-shadow: 5px 5px 15px rgba(192, 178, 52, .6);
+	box-shadow: 5px 5px 15px rgba(192, 178, 52, .6);
+}
+
+.shade:hover {
+	-webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, .6);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, .6);
+}

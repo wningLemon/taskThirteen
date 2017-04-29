@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>极客学院课程列表</title>
+		<link rel="stylesheet" href="css/jkCourse.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jkCourse.js"></script>
+	</head>
+
+	<body>
+		<!--首页导航-->
+		<div class="header">
+			<div class="nav">
+				<a class="logo">
+					<img src="img/logo.png" width="109px" height="40px" />
+				</a>
+				<ul>
+					<li>
+						<a class="a-index" href="#">首页</a>
+					</li>
+					<li class="li-career">
+						<a href="#">职业学院&nbsp;
+							<i class="arrow"></i>
+						</a>
+						<!--职业学院的下拉菜单-->
+						<div class="d-career" id="d-career">
+							<h3>前端学院</h3>
+							<a href="#">
+								<i class="web-icon"></i> Web前端工程师
+							</a>
+							<h3>后端学院</h3>
+							<a href="#">
+								<i class="Pyhon-icon"></i> Pyhon Web工程师
+							</a>
+							<a href="#">
+								<i class="Go-icon"></i> Go语言工程师
+							</a>
+							<h3>移动学院</h3>
+							<a href="#">
+								<i class="ios-icon"></i> ios前端工程师
+							</a>
+						</div>
+					</li>
+					<li class="li-VIP">
+						<a href="#">会员课程&nbsp;
+							<i class="arrow"></i>
+						</a>
+						<!--会员的下拉菜单-->
+						<div class="d-VIP" id="d-VIP">
+							<a href="#"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+							<a href="#"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+							<a href="#"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+							<a href="#"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+							<a href="#"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+							<a href="#"><i class="vip-icon"></i>VIP会员购买<span>30/月 260/年</span></a>
+						</div>
+					</li>
+					<li class="li-sq">
+						<a href="#">极客社区&nbsp;
+							<i class="arrow"></i></a>
+						<!--极客社区的下拉菜单-->
+						<div class="d-sq" id="d-sq">
+							<a href="#"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+							<a href="#"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+							<a href="#"><i class="sq-icon"></i>社群<span>7000+</span></a>
+							<a href="#"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+						</div>
+					</li>
+				</ul>
+				<div class="header-right">
+					<span class="search-btn"></span>
+					<span class="download-btn">
+						<div class="download-code">
+						<em></em>
+						<i></i>
+							<img src="img/heade-rwm.png"/>
+						</div>
+					</span>
+					<span class="certificate-btn" id="certificate-btn">
+					<a>
+						<img src="img/default.gif" width="25px" height="25px" />
+					</a>
+					<div class="certificate-div">
+						<em></em>
+						<i class="tri"></i>
+						<a>
+							<i class="cer-icon"></i>
+							<i class="vip-icon-right"></i>
+						</a>
+						<a>
+							<i class="study-center"></i>学习中心
+						</a>
+						<a>
+							<i class="person-index"></i>个人主页
+						</a>
+						<a>
+							<i class="message-inform"></i>消息告知
+						</a>
+						<a>
+							<i class="acount-set"></i>账号设置
+						</a>
+						<a>
+							<i class="quit"></i>退出登录
+						</a>
+					</div>
+				   </span>
+				</div>
+
+				<!--搜索输入框-->
+				<div class="search-div">
+					<i class="search-icon"></i>
+					<i class="close-icon"></i>
+					<input type="text" placeholder="搜索课程、问答或Wiki" />
+					<div class="tagbox">
+						<a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+						<a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a>
+						<a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--页面主体-->
+		<div class="content-container">
+			<div class="content">
+				<!--左边分类部分-->
+				<div class="left">
+					<div class="left-top">
+						<div class="left-top-head">
+							<h2>
+								<a href="#"><i class="icon-course"></i>课程库</a>
+							</h2>
+						</div>
+						<div class="fl">
+							<ul>
+								<li>
+									<div>
+										<a id="fl-a" href="#">移动开发</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">前端开发</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">后端开发</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">基础知识</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">云计算&大数据</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">智能硬件&物联网</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">数据库</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">认证考试</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">企业 IT</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a id="fl-a" href="#">设计&产品&测试</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+							
+						<!--左侧菜单下hover事件下的菜单-->
+						<div class="left-show">
+							   <dl>
+                                <dt><a href="#" cgid="58">应用开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="59">Android</a>
+                                    
+                                    <a href="#" cgid="60">iOS</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="13">游戏开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="63">Cocos</a>
+                                    
+                                    <a href="#" cgid="64">Unity3D</a>
+                                    
+                                    <a href="#" cgid="65">SpriteKit 2D</a>
+                                    
+                                    <a href="#" cgid="66">Unreal</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="14">常用框架</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="68">Cordova</a>
+                                    
+                                    <a href="#" cgid="382">React Native</a>
+                                    
+                                </dd>
+                            </dl>
+						</div>
+						<div class="left-show">
+							    <dl>
+                                <dt><a href="#">前端基础</a></dt>
+                                <dd>
+                                    
+                                    <a href="#" cgid="76">HTML</a>
+                                    
+                                    <a href="#" >CSS</a>
+                                    
+                                    <a href="#">JavaScript</a>
+                                    
+                                    <a href="#">HTML5</a>
+                                    
+                                    <a href="#">CSS3</a>
+                                    
+                                    <a href="#">技术前瞻</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="http://www.jikexueyuan.com/course/advance/" cgid="18">前端进阶</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">Typescript</a>
+                                    
+                                    <a href="#">前端安全</a>
+                                    
+                                    <a href="#">项目实战</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">前端框架</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">jQuery</a>
+                                    
+                                    <a href="#">jQuery UI</a>
+                                    
+                                    <a href="3">jQuery Mobile</a>
+                                    
+                                    <a href="#">Ext JS</a>
+                                    
+                                    <a href="#">AngularJS</a>
+                                    
+                                    <a href="#">ReactJS</a>
+                                    
+                                    <a href="#">Bootstrap</a>
+                                    
+                                    <a href="#">React Native</a>
+                                    
+                                    <a href="#">Backbone</a>
+                                    
+                                    <a href="#">Three.js</a>
+                                    
+                                    <a href="#">MooTools</a>
+                                    
+                                    <a href="#">Compass</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">HTML5游戏</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">Canvas</a>
+                                    
+                                    <a href="#">SVG</a>
+                                    
+                                    <a href="#">WebGL</a>
+                                    
+                                    <a href="#">Cocos2d-js</a>
+                                    
+                                    <a href="#">CreateJS</a>
+                                    
+                                    <a href="#">Flash</a>
+                                    
+                                    <a href="#">Unreal</a>
+                                    
+                                    <a href="#">Egret</a>
+                                
+						</div>
+					    <div class="left-show">
+					    	 <dl>
+                                <dt><a href="#">Python</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Python 基础</a>
+                                    
+                                    <a href="#">web2py</a>
+                                    
+                                    <a href="#">Django</a>
+                                    
+                                    <a href="#">Flask</a>
+                                    
+                                    <a href="#">GUI</a>
+                                    
+                                    <a href="#">数据挖掘与分析</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">PHP</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">PHP 基础</a>
+                                    
+                                    <a href="#">YII</a>
+                                    
+                                    <a href="#">ThinkPHP</a>
+                                    
+                                    <a href="#">Laravel</a>
+                                    
+                                    <a href="#">WordPress</a>
+                                    
+                                    <a href="#">Phalcon</a>
+                                    
+                                    <a href="#">Apache</a>
+                                    
+                                    <a href="#">Facebook Hack</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Node.js</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Node.js 基础</a>
+                                    
+                                    <a href="#">express</a>
+                                    
+                                    <a href="#">Meteor</a>
+                                    
+                                    <a href="#">Hexo</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">ASP.NET</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">C#</a>
+                                    
+                                    <a href="#">ASP.NET MVC</a>
+                                    
+                                    <a href="#">Entity Framework</a>
+                                    
+                                    <a href="#">WPF</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">J2EE</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">JSP</a>
+                                    
+                                    <a href="#">Maven</a>
+                                    
+                                    <a href="#">Spring</a>
+                                    
+                                    <a href="#">SpringMVC</a>
+                                    
+                                    <a href="#">Struts2</a>
+                                    
+                                    <a href="#">MyBatis</a>
+                                    
+                                    <a href="#">Hibernate</a>
+                                    
+                                    <a href="#">Lucene</a>
+                                    
+                                    <a href="#">常用框架</a>
+                                    
+                                    <a href="#">项目实战</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Ruby</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Ruby 基础</a>
+                                    
+                                    <a href="#">Ruby on Rails</a>
+                                    
+                                    <a href="#">Grape</a>
+                                    
+                                    <a href="#">Ruby进阶</a>
+                                    
+                                    <a href="#">RubyMine</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Go</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Go 基础</a>
+                                    
+                                    <a href="#">Revel</a>
+                                    
+                                    <a href="#">beego</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Erlang</a></dt>
+                                <dd>
+                                    
+                                    <a href="#"></a>
+                                </dd>
+					    </div>
+					    <div class="left-show">
+							   <dl>
+                                <dt><a href="#" cgid="58">应用开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="59">Android</a>
+                                    
+                                    <a href="#" cgid="60">iOS</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="13">游戏开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="63">Cocos</a>
+                                    
+                                    <a href="#" cgid="64">Unity3D</a>
+                                    
+                                    <a href="#" cgid="65">SpriteKit 2D</a>
+                                    
+                                    <a href="#" cgid="66">Unreal</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="14">常用框架</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="68">Cordova</a>
+                                    
+                                    <a href="#" cgid="382">React Native</a>
+                                    
+                                </dd>
+                            </dl>
+						</div>
+						<div class="left-show">
+							    <dl>
+                                <dt><a href="#">前端基础</a></dt>
+                                <dd>
+                                    
+                                    <a href="#" cgid="76">HTML</a>
+                                    
+                                    <a href="#" >CSS</a>
+                                    
+                                    <a href="#">JavaScript</a>
+                                    
+                                    <a href="#">HTML5</a>
+                                    
+                                    <a href="#">CSS3</a>
+                                    
+                                    <a href="#">技术前瞻</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="http://www.jikexueyuan.com/course/advance/" cgid="18">前端进阶</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">Typescript</a>
+                                    
+                                    <a href="#">前端安全</a>
+                                    
+                                    <a href="#">项目实战</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">前端框架</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">jQuery</a>
+                                    
+                                    <a href="#">jQuery UI</a>
+                                    
+                                    <a href="3">jQuery Mobile</a>
+                                    
+                                    <a href="#">Ext JS</a>
+                                    
+                                    <a href="#">AngularJS</a>
+                                    
+                                    <a href="#">ReactJS</a>
+                                    
+                                    <a href="#">Bootstrap</a>
+                                    
+                                    <a href="#">React Native</a>
+                                    
+                                    <a href="#">Backbone</a>
+                                    
+                                    <a href="#">Three.js</a>
+                                    
+                                    <a href="#">MooTools</a>
+                                    
+                                    <a href="#">Compass</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">HTML5游戏</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">Canvas</a>
+                                    
+                                    <a href="#">SVG</a>
+                                    
+                                    <a href="#">WebGL</a>
+                                    
+                                    <a href="#">Cocos2d-js</a>
+                                    
+                                    <a href="#">CreateJS</a>
+                                    
+                                    <a href="#">Flash</a>
+                                    
+                                    <a href="#">Unreal</a>
+                                    
+                                    <a href="#">Egret</a>
+                                
+						</div>
+					    <div class="left-show">
+					    	 <dl>
+                                <dt><a href="#">Python</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Python 基础</a>
+                                    
+                                    <a href="#">web2py</a>
+                                    
+                                    <a href="#">Django</a>
+                                    
+                                    <a href="#">Flask</a>
+                                    
+                                    <a href="#">GUI</a>
+                                    
+                                    <a href="#">数据挖掘与分析</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">PHP</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">PHP 基础</a>
+                                    
+                                    <a href="#">YII</a>
+                                    
+                                    <a href="#">ThinkPHP</a>
+                                    
+                                    <a href="#">Laravel</a>
+                                    
+                                    <a href="#">WordPress</a>
+                                    
+                                    <a href="#">Phalcon</a>
+                                    
+                                    <a href="#">Apache</a>
+                                    
+                                    <a href="#">Facebook Hack</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Node.js</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Node.js 基础</a>
+                                    
+                                    <a href="#">express</a>
+                                    
+                                    <a href="#">Meteor</a>
+                                    
+                                    <a href="#">Hexo</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">ASP.NET</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">C#</a>
+                                    
+                                    <a href="#">ASP.NET MVC</a>
+                                    
+                                    <a href="#">Entity Framework</a>
+                                    
+                                    <a href="#">WPF</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">J2EE</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">JSP</a>
+                                    
+                                    <a href="#">Maven</a>
+                                    
+                                    <a href="#">Spring</a>
+                                    
+                                    <a href="#">SpringMVC</a>
+                                    
+                                    <a href="#">Struts2</a>
+                                    
+                                    <a href="#">MyBatis</a>
+                                    
+                                    <a href="#">Hibernate</a>
+                                    
+                                    <a href="#">Lucene</a>
+                                    
+                                    <a href="#">常用框架</a>
+                                    
+                                    <a href="#">项目实战</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Ruby</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Ruby 基础</a>
+                                    
+                                    <a href="#">Ruby on Rails</a>
+                                    
+                                    <a href="#">Grape</a>
+                                    
+                                    <a href="#">Ruby进阶</a>
+                                    
+                                    <a href="#">RubyMine</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Go</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Go 基础</a>
+                                    
+                                    <a href="#">Revel</a>
+                                    
+                                    <a href="#">beego</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Erlang</a></dt>
+                                <dd>
+                                    
+                                    <a href="#"></a>
+                                </dd>
+					    </div>
+				    	<div class="left-show">
+							   <dl>
+                                <dt><a href="#" cgid="58">应用开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="59">Android</a>
+                                    
+                                    <a href="#" cgid="60">iOS</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="13">游戏开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="63">Cocos</a>
+                                    
+                                    <a href="#" cgid="64">Unity3D</a>
+                                    
+                                    <a href="#" cgid="65">SpriteKit 2D</a>
+                                    
+                                    <a href="#" cgid="66">Unreal</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="14">常用框架</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="68">Cordova</a>
+                                    
+                                    <a href="#" cgid="382">React Native</a>
+                                    
+                                </dd>
+                            </dl>
+						</div>
+						<div class="left-show">
+							    <dl>
+                                <dt><a href="#">前端基础</a></dt>
+                                <dd>
+                                    
+                                    <a href="#" cgid="76">HTML</a>
+                                    
+                                    <a href="#" >CSS</a>
+                                    
+                                    <a href="#">JavaScript</a>
+                                    
+                                    <a href="#">HTML5</a>
+                                    
+                                    <a href="#">CSS3</a>
+                                    
+                                    <a href="#">技术前瞻</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="http://www.jikexueyuan.com/course/advance/" cgid="18">前端进阶</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">Typescript</a>
+                                    
+                                    <a href="#">前端安全</a>
+                                    
+                                    <a href="#">项目实战</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">前端框架</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">jQuery</a>
+                                    
+                                    <a href="#">jQuery UI</a>
+                                    
+                                    <a href="3">jQuery Mobile</a>
+                                    
+                                    <a href="#">Ext JS</a>
+                                    
+                                    <a href="#">AngularJS</a>
+                                    
+                                    <a href="#">ReactJS</a>
+                                    
+                                    <a href="#">Bootstrap</a>
+                                    
+                                    <a href="#">React Native</a>
+                                    
+                                    <a href="#">Backbone</a>
+                                    
+                                    <a href="#">Three.js</a>
+                                    
+                                    <a href="#">MooTools</a>
+                                    
+                                    <a href="#">Compass</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">HTML5游戏</a></dt>
+                                <dd>
+                                    
+                                    <a href="#">Canvas</a>
+                                    
+                                    <a href="#">SVG</a>
+                                    
+                                    <a href="#">WebGL</a>
+                                    
+                                    <a href="#">Cocos2d-js</a>
+                                    
+                                    <a href="#">CreateJS</a>
+                                    
+                                    <a href="#">Flash</a>
+                                    
+                                    <a href="#">Unreal</a>
+                                    
+                                    <a href="#">Egret</a>
+                                
+						</div>
+					    <div class="left-show">
+					    	 <dl>
+                                <dt><a href="#">Python</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Python 基础</a>
+                                    
+                                    <a href="#">web2py</a>
+                                    
+                                    <a href="#">Django</a>
+                                    
+                                    <a href="#">Flask</a>
+                                    
+                                    <a href="#">GUI</a>
+                                    
+                                    <a href="#">数据挖掘与分析</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">PHP</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">PHP 基础</a>
+                                    
+                                    <a href="#">YII</a>
+                                    
+                                    <a href="#">ThinkPHP</a>
+                                    
+                                    <a href="#">Laravel</a>
+                                    
+                                    <a href="#">WordPress</a>
+                                    
+                                    <a href="#">Phalcon</a>
+                                    
+                                    <a href="#">Apache</a>
+                                    
+                                    <a href="#">Facebook Hack</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Node.js</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Node.js 基础</a>
+                                    
+                                    <a href="#">express</a>
+                                    
+                                    <a href="#">Meteor</a>
+                                    
+                                    <a href="#">Hexo</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">ASP.NET</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">C#</a>
+                                    
+                                    <a href="#">ASP.NET MVC</a>
+                                    
+                                    <a href="#">Entity Framework</a>
+                                    
+                                    <a href="#">WPF</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">J2EE</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">JSP</a>
+                                    
+                                    <a href="#">Maven</a>
+                                    
+                                    <a href="#">Spring</a>
+                                    
+                                    <a href="#">SpringMVC</a>
+                                    
+                                    <a href="#">Struts2</a>
+                                    
+                                    <a href="#">MyBatis</a>
+                                    
+                                    <a href="#">Hibernate</a>
+                                    
+                                    <a href="#">Lucene</a>
+                                    
+                                    <a href="#">常用框架</a>
+                                    
+                                    <a href="#">项目实战</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Ruby</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Ruby 基础</a>
+                                    
+                                    <a href="#">Ruby on Rails</a>
+                                    
+                                    <a href="#">Grape</a>
+                                    
+                                    <a href="#">Ruby进阶</a>
+                                    
+                                    <a href="#">RubyMine</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Go</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#">Go 基础</a>
+                                    
+                                    <a href="#">Revel</a>
+                                    
+                                    <a href="#">beego</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#">Erlang</a></dt>
+                                <dd>
+                                    
+                                    <a href="#"></a>
+                                </dd>
+					    </div>
+					    <div class="left-show">
+							   <dl>
+                                <dt><a href="#" cgid="58">应用开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="59">Android</a>
+                                    
+                                    <a href="#" cgid="60">iOS</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="13">游戏开发</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="63">Cocos</a>
+                                    
+                                    <a href="#" cgid="64">Unity3D</a>
+                                    
+                                    <a href="#" cgid="65">SpriteKit 2D</a>
+                                    
+                                    <a href="#" cgid="66">Unreal</a>
+                                    
+                                </dd>
+                            </dl>
+                            
+                            <dl>
+                                <dt><a href="#" cgid="14">常用框架</a></dt>
+                                <dd class="cf">
+                                    
+                                    <a href="#" cgid="68">Cordova</a>
+                                    
+                                    <a href="#" cgid="382">React Native</a>
+                                    
+                                </dd>
+                            </dl>
+						</div>
+					
+					</div>
+					<div class="left-down">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="zy-icon"></i>职业路径图
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="zs-icon"></i>知识体系图
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<i class="xl-icon"></i>系列课程
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="kc-icon"></i>课程标签
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--右边课程部分-->
+				<div class="right">
+					<!--主体右部导航部分-->
+					<div class="right-top">
+						<div class="right-left">
+							<h2>移动开发</h2>
+							<ul class="banner-ul">
+								<li>最新<i class="down-arrow"></i>
+									<ul class="li-show li-show1">
+										<li class="noChange">
+											<a href="#">最新</a>
+										</li>
+										<li>
+											<a href="#">最新</a>
+										</li>
+										<li>
+											<a href="#">最热</a>
+										</li>
+									</ul>
+								</li>
+								<li>课程类型<i class="down-arrow"></i>
+									<ul class="li-show li-show2">
+										<li class="noChange">
+											<a href="#">课程类型</a>
+										</li>
+										<li>
+											<a href="#">VIP</a>
+										</li>
+										<li>
+											<a href="#">免费</a>
+										</li>
+										<li>
+											<a href="#">认证专享</a>
+										</li>
+										<li>
+											<a href="#">全部</a>
+										</li>
+									</ul>
+								</li>
+								<li>内容类型<i class="down-arrow"></i>
+									<ul class="li-show li-show3">
+										<li class="noChange">
+											<a href="#">内容类型</a>
+										</li>
+										<li>
+											<a href="#">知识精讲</a>
+										</li>
+										<li>
+											<a href="#">项目实战</a>
+										</li>
+										<li>
+											<a href="#">全部</a>
+										</li>
+									</ul>
+								</li>
+								<li>难度类型<i class="down-arrow"></i>
+									<ul class="li-show li-show2">
+										<li class="noChange">
+											<a href="#">难度等级</a>
+										</li>
+										<li>
+											<a href="#">初级</a>
+										</li>
+										<li>
+											<a href="#">中级</a>
+										</li>
+										<li>
+											<a href="#">高级</a>
+										</li>
+										<li>
+											<a href="#">全部</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="right-right">
+							<ul>
+								<li>
+									<i class="xs-icon" id="pp"></i>
+								</li>
+								<li>
+									<i class="xs-icon" id="ll"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="course-show">
+						<!--平铺布局-->
+						<div class="course-tile">
+							<ul>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text" id="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="li-three">
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="li-three">
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="li-three">
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="li-three">
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="li-three">
+									<div class="course-img">
+										<img src="img/course.jpg" />
+										<i class="shoucang-icon"></i>
+										<i class="mark"></i>
+										<div class="player"></div>
+									</div>
+									<div class="course-text">
+										<h2>
+										<a href="#">打造你自己的Dragonboard 410c</a>
+									</h2>
+										<p class="subject-intro">本课主要阐述Dragonboard 410c支持的软硬件环境，外设接口，以及功能用途的同时，教大家如何去购买及使用Dragonboard 410c开发板。</p>
+										<div class="time">
+											<div class="cf">
+												<dl>
+													<dt class="mar-b8"><i class="time-icon"></i><em>3课时16分钟</em>
+												</dt>
+													<dd class="zhongji">
+														<i class="xinhao-icon"></i><em>初级</em>
+													</dd>
+
+												</dl>
+												<em class="learn-number">2178人学习</em>
+											</div>
+											<div class="lessonicon-box">
+												<a href="#">
+													<img src="img/and.png" alt="android" width="16">
+												</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--罗列布局-->
+						<div class="course-list">
+							<ul>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="img-div">
+										<img src="img/course.jpg" />
+										<i class="mark1"></i>
+										<i class="shoucang-icon"></i>
+										<div class="player"></div>
+									</div>
+									<div class="text-div">
+										<div class="cloud-div">
+											<a href="#">
+												<img src="img/cloud.png" />
+											</a>
+										</div>
+										<h2 class="lesson-info-h2"><a href="#">腾讯大咖分享 - 腾讯大咖分享之技术交流</a></h2>
+										<p style="height: 36px; display: block;">本课程主要是腾讯大咖与大家分享一些技术经验与心得。</p>
+										<div class="time1">
+											<span><i class="time-icon1"></i></span>
+											<span>3课时 16分钟</span>
+											<span><i class="xinhao-icon1"></i></span>
+											<span>初级</span>
+											<span class="number">2414学习</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--分页部分-->
+						<div class="page-change">
+							<ul>
+								<li>首页</li>
+								<li>上一页</li>
+								<li class="page-number pgCurrent">1</li>
+								<li class="page-number">2</li>
+								<li class="page-number">3</li>
+								<li class="page-number">4</li>
+								<li class="page-number">5</li>
+								<li class="page-number">6</li>
+								<li class="page-number">7</li>
+								<li class="thpoint">...</li>
+								<li class="pgNext">下一页</li>
+								<li class="pgNext">末页</li>
+								<li class="thpoint">共 95 页</li>
+								<li class="thpoint ">当前&nbsp;<input value="1" maxlength="6" type="text">&nbsp;页</li>
+								<li class="go">确定</li>
+							</ul>
+						</div>
+
+				</div>
+			</div>
+		</div>
+		
+		<!--页面底部-->
+		<div class="footer">
+			<div class="footer-con">
+				<div class="con-top">
+					<div class="conUp-L">
+						<img src="img/jk-logo-footer.png" />
+						<p>极客学院，编程是一种信仰</p>
+					</div>
+					<div class="conUp-M">
+						<table style="table-layout:fixed;">
+							<tr>
+								<th>职业学院</th>
+								<th>会员课程</th>
+								<th>极客社区</th>
+								<th>其他</th>
+							</tr>
+							<tr>
+								<td>Web 前端工程师</td>
+								<td>课程库</td>
+								<td>技术问答</td>
+								<td>关于我们</td>
+							</tr>
+							<tr>
+								<td>Python Web工程师</td>
+								<td>只是体系图</td>
+								<td>WiKi</td>
+								<td>使用指南</td>
+							</tr>
+							<tr>
+								<td>Go语言工程师</td>
+								<td>职业路径图</td>
+								<td>资源下载</td>
+								<td>假如我们</td>
+							</tr>
+							<tr>
+								<td>ios工程师</td>
+								<td>系列课程</td>
+								<td>社群</td>
+								<td>联系我们</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>课程标签</td>
+								<td></td>
+								<td>友情链接</td>
+							</tr>
+						</table>
+					</div>
+					<div class="conUp-R">
+						<p class="tel">服务热线:400-678-8266</p>
+						<div class="down down-ios">iphone
+							<img class="down-ios-img" src="img/app.png" />
+						</div>
+						<div class="down down-and">Android
+							<img class="down-and-img" src="img/app.png" />
+						</div>
+					</div>
+				</div>
+				<div class="con-down">
+					<span class="cor-icon">
+					 	<a><i class="sina"></i></a>
+		          	<a><i class="wechat"></i></a>
+		          </span>
+					<p>Copyright © 2013-2016
+						<a href="#">jekexueyuan.com</a> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+					</p>
+					<a><img src="img/cert.png" width="60px" /></a>
+				</div>
+			</div>
+		</div>
+	
+	    <!--返回顶部-->
+	    <div class="gotop">
+	    	<span class="gotop-btn"></span>
+	    	<span class="phone">
+	    		<div class="phone-code"></div>
+	    	</span>
+	    </div>
+	</body>
+
+</html>

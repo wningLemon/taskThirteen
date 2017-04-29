@@ -1,0 +1,138 @@
+	.fie {
+		width: 400px;
+		margin: 30px 10px;
+		float: left;
+	}
+	/*标准盒模型样式*/
+	
+	.inner {
+		width: 150px;
+		height: 150px;
+		background: #ceebfb;
+		text-align: center;
+		line-height: 150px;
+	}
+	
+	.outer {
+		width: 150px;
+		height: 150px;
+		padding: 10px;
+		background: #14dac9;
+		border: 3px solid #1395b5;
+		display: inline-block;
+		margin: 0 15px;
+	}
+	/*怪异盒模型样式*/
+	
+	.inner1 {
+		width: 150px;
+		height: 150px;
+		background: #fdabc1;
+		text-align: center;
+		line-height: 150px;
+	}
+	
+	.outer1 {
+		width: 176px;
+		height: 176px;
+		padding: 10px;
+		background: #f5e9d1;
+		border: 3px solid #f5ab24;
+		box-sizing: border-box;
+		display: inline-block;
+	}
+	/*新版弹性盒子水平分栏*/
+	
+	.con {
+		display: -webkit-flex;
+		-webkit-flex-direction: row;
+	}
+	
+	.first {
+		height: 50px;
+		-webkit-flex: 2;
+		background: #e3c2e1;
+		-webkit-order: 3;
+	}
+	
+	.second {
+		height: 50px;
+		-webkit-flex: 3;
+		background: #dcbfb7;
+		-webkit-order: 1;
+	}
+	
+	.third {
+		height: 50px;
+		-webkit-flex: 1;
+		background: #eed5e9;
+		-webkit-order: 2;
+	}
+	/*新版弹性盒子垂直分栏*/
+	
+	.con1 {
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+		height: 120px;
+	}
+	
+	.one {
+		height: 50px;
+		-webkit-flex: 1;
+		background: #457f91;
+		-webkit-order: 3;
+	}
+	
+	.two {
+		height: 50px;
+		-webkit-flex: 1;
+		background: #d2e8db;
+		-webkit-order: 1;
+	}
+	
+	.three {
+		height: 50px;
+		-webkit-flex: 1;
+		background: #ae9881;
+		-webkit-order: 2;
+	}
+	/*旧版弹性盒子水平垂直居中*/
+	
+	.big {
+		background: aliceblue;
+		width: 400px;
+		height: 200px;
+		display: -webkit-box;
+		-webkit-box-align: center;
+		-webkit-box-pack: center;
+	}
+	
+	.small {
+		width: 200px;
+		height: 100px;
+		background: pink;
+	}
+	/*不被固定列数的多列*/
+	
+	.test {
+		border: 5px solid #000;
+		-moz-columns: 200px;
+		-webkit-columns: 200px;
+		columns: 200px;
+		-webkit-column-gap: normal;
+		-moz-column-gap: normal;
+		column-gap: normal;
+		-webkit-column-rule: 3px dotted #14DAC9;
+		-moz-column-rule: 3px dotted #14DAC9;
+		column-rule: 3px dotted #14DAC9;
+	}
+	/*被固定列数的多列*/
+	
+	.test1 {
+		width: 800px;
+		border: 3px dashed #666666;
+		-moz-columns: 150px 4;
+		-webkit-columns: 150px 4;
+		columns: 200px 4;
+		margin: 30px auto;
+	}

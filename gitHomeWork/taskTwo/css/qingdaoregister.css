@@ -1,0 +1,125 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: url(../img/beijing.gif);
+}
+
+.container {
+	width: 710px;
+	margin: 10px auto;
+	background: #fff;
+	border-radius: 28px;
+}
+
+
+/*top*/
+
+.top-left {
+	float: left;
+	margin-top: 3px;
+	margin-left: 30px;
+}
+
+.top-right {
+	float: right;
+	font-size: 12px;
+	margin-top: 65px;
+	margin-right: 25px;
+	color: #ff2faf;
+}
+
+.top-right a {
+	margin-right: 8px;
+}
+
+
+/*topend*/
+
+
+/*formtable start*/
+
+table {
+	width: 90%;
+	margin: auto;
+	border-color: #ccc;
+	border-collapse: collapse;
+}
+
+table caption {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.red {
+	color: red;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.a-red:hover {
+	color: red;
+}
+
+td {
+	font-size: 12px;
+	line-height: 150%;
+	color: #333;
+	padding: 2px;
+}
+
+.td-title {
+	font-size: 14px;
+	line-height: 150%;
+	color: #039;
+	text-align: left;
+	padding-left: 4px;
+}
+
+.blue {
+	color: #00f;
+}
+
+.td-input {
+	padding: 2px;
+}
+
+.td-align {
+	text-align: right;
+	/*word-spacing:8px; */
+	/*letter-spacing: 1px;*/
+}
+
+.span-bold {
+	font-weight: bold;
+}
+
+li {
+	padding: 3px;
+}
+
+li input {
+	margin: 3px;
+}
+
+label{
+	white-space: nowrap;
+}
+
+/*formtable end*/
+
+
+/*copyRight*/
+
+.p-footer {
+	text-align: center;
+	padding-bottom: 28px;
+	font-size: 12px;
+	color: #333;
+}

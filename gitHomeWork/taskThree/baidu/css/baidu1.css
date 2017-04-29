@@ -1,0 +1,689 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,
+body {
+	height: 100%;
+	font: 12px arial;
+}
+@media screen and (min-width:768px) {
+	body {
+	position: relative;
+	min-width: 810px;
+    min-height: 600px;
+}
+}
+
+
+
+/*百度首页右侧导航样式*/
+
+.header {
+	position: relative;
+	min-width: 810px;
+}
+
+.nav {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 19px 0 5px 0;
+	padding: 0 96px 0 0;
+}
+
+.nav a,
+.nav a:visited {
+	float: left;
+	color: #333;
+	font-weight: bold;
+	line-height: 24px;
+	margin-left: 20px;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+#set,
+#login {
+	font-weight: normal;
+}
+
+.nav .more {
+	position: absolute;
+	right: 10px;
+	width: 60px;
+	height: 24px;
+	color: #FFFFFF;
+	background: #38F;
+	text-decoration: none;
+	font-size: 13px;
+	margin-right: 2px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.nav a:hover {
+	color: #0000cc;
+}
+
+.nav .more:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+/*设置的整个下拉div*/
+
+#setDiv {
+	position: absolute;
+	right: 73px;
+	top: 40px;
+	width: 72px;
+	height: 114px;
+	display: none;
+}
+
+
+/*下拉菜单的小三角形*/
+
+#setDiv em,
+#setDiv i {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	position: absolute;
+	border: 5px solid transparent;
+	border-style: dashed dashed solid dashed;
+}
+
+#setDiv em {
+	border-bottom-color: #d8d8d8;
+	top: -1px;
+	left: 32px;
+	z-index: 10;
+}
+
+#setDiv i {
+	border-bottom-color: #fff;
+	top: 0px;
+	left: 32px;
+	z-index: 11;
+}
+
+
+/*下拉菜单的内容*/
+
+#set-div {
+	position: absolute;
+	top: 10px;
+	width: 72px;
+	height: 104px;
+	list-style: none;
+	font-size: 13px;
+	line-height: 26px;
+	color: #666;
+	text-align: center;
+	cursor: pointer;
+	background-color: #fff;
+	z-index: 9;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+}
+
+
+/*改变下拉菜单每个li的背景颜色*/
+
+#set-div li:hover {
+	background: #38f;
+	text-decoration: none;
+	color: white;
+}
+
+
+/*右侧更多下拉菜单*/
+
+#moreDiv {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 85px;
+	min-height: 635px;
+	z-index: 2;
+	background: #fff;
+	border-left: 1px solid #e7e7e7;
+	background-color: #f9f9f9;
+	overflow: hidden;
+	z-index: 2;
+	display: none;
+}
+
+
+/*给右侧下拉菜单的a添加样式*/
+
+#moreDiv a {
+	display: block;
+	text-align: center;
+	width: 66px;
+	height: 76px;
+	margin: 0 auto;
+	border-bottom: #f0f0f0 1px solid;
+	color: #666;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#moreDiv a:hover {
+	text-decoration: underline;
+}
+
+
+/*给右侧下拉菜单的第一个a标签添加样式*/
+
+#moreDiv #a-more {
+	margin-top: 20px;
+	height: 30px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#moreDiv #a-more:hover {
+	text-decoration: none;
+}
+
+
+/*给右侧下拉菜单的最后一个a标签添加样式*/
+
+#moreDiv a:last-child {
+	margin-top: 15px;
+	text-decoration: underline;
+	border-bottom: 0;
+}
+
+
+/*右侧下拉菜单中的span标签*/
+
+.music,
+.pic,
+.know,
+.document,
+.rank {
+	width: 36px;
+	height: 36px;
+	display: block;
+	margin: 10px auto 6px;
+	background: url(../img/right_icons.png) no-repeat;
+	cursor: pointer;
+}
+
+
+/*给每一个span标签制定对应图片*/
+
+.music {
+	width: 40px;
+	background-position: -72px 0px;
+}
+
+.pic {
+	background-position: -112px 0px;
+}
+
+.know {
+	width: 40px;
+	background-position: -145px 0px;
+}
+
+.document {
+	width: 40px;
+	background-position: -180px 0px;
+}
+
+.rank {
+	width: 40px;
+	background-position: -220px 0px;
+}
+
+
+/*百度首页中间的图片以及输入框的样式*/
+
+.article {
+	position: absolute;
+	top: 63px;
+	width: 1000px;
+	height: 300px;
+	left: 50%;
+	margin-left: -500px;
+	text-align: center;
+}
+
+
+/*百度图片*/
+
+.baidu-img {
+	/*position: absolute;*/
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+@media screen and (min-width:769px) {
+	/*搜索输入的区域*/
+
+.form {
+	position: absolute;
+	/*margin: 154px auto 0;*/
+	/*top: 0;*/
+	top: 154px;
+	left: 50%;
+	margin-left: -321px;
+	/*bottom: 0;
+	right: 0;*/
+	width: 642px;	
+	/*background: blue;*/
+}
+}
+
+.form{
+	height: 34px;
+	text-align: left;
+	border: 1px solid #4791ff;
+	display: inline-block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+/*搜索输入框*/
+
+input[type=text] {
+	width: 526px;
+	height: 22px;
+	margin: 6px 0 0 6px;
+	border: 0;
+	outline: none;
+	font: 16px/18px arial;
+}
+
+
+/*相机小按钮*/
+
+.photo-btn {
+	position: absolute;
+	top: 10px;
+	right: 105px;
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+	background: #fff url(../img/camera.png) no-repeat;
+}
+
+.photo-btn:hover {
+	position: absolute;
+	top: 10px;
+	right: 105px;
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+	background: #fff url(../img/camera.png) no-repeat;
+	background-position: 0px -20px;
+}
+
+
+/*搜索提交按钮*/
+@media screen and (min-width: 769px) {
+	.s-btn {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+}
+
+.s-btn{
+	width: 100px;
+	height: 36px;
+	font-size: 15px;
+	color: white;
+	letter-spacing: 1px;
+	background: #3385ff;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
+}
+#s_btn:hover {
+	background: #317ef3;
+	border-bottom: 1px solid #2868c8;
+	box-shadow: 1px 1px 1px #ccc;
+}
+
+
+/*百度首页页脚样式*/
+
+.footer {
+	position: absolute;
+	display: inline-block;
+	left: 50%;
+	margin-left: -350px;
+	bottom: 60px;
+	width: 700px;
+	text-align: center;
+}
+
+
+/*将底部的div控制间距*/
+
+.footer div {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+
+/*二维码的区域的p标签*/
+
+.left p {
+	line-height: 24px;
+}
+
+
+/*二维码区域中放置p标签的div*/
+
+.p-div {
+	position: relative;
+	top: -12px;
+}
+
+
+/*底部右侧的字体样式*/
+
+.right a,
+.right p,
+.left p {
+	color: #666;
+}
+
+
+/*底部右侧的第一个p标签*/
+
+#Ih a {
+	margin: 0 10px;
+	word-spacing: 3px;
+}
+
+
+/*底部右侧的第二个p标签*/
+
+#cp,
+#cp a {
+	margin-top: 6px;
+}
+
+
+/*底部右侧的第二个p标签和第三个p标签中的i标签添加图片背景*/
+
+#cp .c-icon-icrlogo,
+#jgwab .c-icon-jgwablogo {
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	overflow: hidden;
+	background: url(../img/icons_baidu.png);
+}
+
+#cp .c-icon-icrlogo {
+	background-position: -600px -96px;
+	position: relative;
+	top: 3px;
+}
+
+#jgwab .c-icon-jgwablogo {
+	background-position: -625px -96px;
+	position: relative;
+	top: 3px;
+	margin-right: 6px;
+}
+
+@media screen and (min-width:769px) {
+	.PC{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.PC{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.form{
+		position: relative;
+		top: 20px;
+		width: 96%;
+		/*margin: 0 auto;*/
+	}
+	input[type=text]{
+		width: 82%;
+		background: #f8f8f8;
+	}
+	.s-btn{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+	}
+	
+#container{
+	/*width: 768px;*/
+	width: 100%;
+}
+.headerTwo{
+	position: relative;
+	width: 100%;
+	height: 256px;
+	background: #f8f8f8;
+	box-sizing: border-box;
+}
+.m-nav{
+	width: 100%;
+	height: 35px;
+	/*background: red;*/
+	box-sizing: border-box;
+	padding:2px 20px;
+}
+.m-nav div{
+	display: inline-block;
+}
+.degree{
+	font-size: 29px;
+    color: #999;
+    padding-left: 4px;
+    padding-right: 3px;
+    font-weight: 300;
+}
+.info p{
+	height: 14px;
+    line-height: 14px;
+    font-size: 10px;
+    color: #999;
+}
+.m-nav-l{
+	float: left;
+}
+.m-nav-R{
+	float: right;
+}
+
+.m-nav-R div{
+	margin-left: 10px;
+}
+.bd-img{
+	position: absolute;
+	width: 182px;
+	left: 20%;
+	margin-left: -182px;
+}
+.baidu-logo{
+	width: 100%;
+	height: 57px;
+	margin-top: 15px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.baidu-logo img{
+	width: 181px;
+	height: 57px;
+	/*margin-left: 0px;*/
+}
+
+.formTwo{
+	width: 100%;
+	height: 70px;
+	text-align: center;
+/*	background: pink;*/
+	margin-bottom: 15px;
+}
+.btn-icon{
+	width: 100%;
+	height: 43px;
+	box-sizing: border-box;
+}
+.btn-icon ul li{
+	list-style: none;
+	width: 16%;
+	display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+}
+.btn-icon ul li:hover{
+	cursor: pointer;
+}
+.btn-icon a{
+	width: 28px;
+	height: 13px;
+	display: inline-block;
+	margin-bottom: 10px;
+	
+}
+.gz i,.xw i,.xs i,.sp i,.nm i,.dt i{
+	display: block;
+	width: 22px;
+	height: 22px;
+	margin: 0 auto 8px;
+	background: url(../img/ns_diff_color_v2.png) no-repeat;
+	background-size: 22px auto;
+}
+.gz i{
+	background-position: 0 -264px;
+}
+.xw i{
+	background-position: 0 -395px;
+}
+.xs i{
+	background-position: 0 -330px;
+}
+.sp i{
+	background-position: 0 -462px;
+}
+.nm i{
+	background-position: 0 -418px;
+}
+.dt i{
+	background-position: 0 -308px;
+}
+
+.btn-icon ul li span{
+	font-size: 13px;
+	color: #666;
+}
+
+/*页面内容部分*/
+.content{
+	width: 100%;
+}
+.content a{
+	text-decoration: none;
+}
+.text-content{
+	width: 100%;
+	padding: 5px 15px;
+	box-sizing: border-box;
+	margin-bottom: 8px;
+}
+.text-content h2{
+	font-weight: normal;
+	color: #aaa;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 13px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text-content h5{
+	font-size: 13px;
+	line-height: 13px;
+	color: #999;
+	font-weight: normal;
+	margin-top: 13px;
+}
+.content-img{
+	width: 100%;
+    display: flex;
+    display: -webkit-flex;
+   justify-content: center;
+}
+.content-img div{
+	/*width: 33%;*/
+	display: inline-block;
+}
+.content-img div:nth-child(1),
+.content-img div:nth-child(2){
+	margin-right: 5px;
+}
+.content-img img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1475740977'); /* IE9*/*/
+  /*src: url('iconfont.eot?t=1475740977#iefix') format('embedded-opentype'),*/ /* IE6-IE8 */
+  /*url('iconfont.woff?t=1475740977') format('woff'), *//* chrome, firefox */
+  /*url('iconfont.ttf?t=1475740977') format('truetype'), *//* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  /*url('iconfont.svg?t=1475740977#iconfont') format('svg');*/ /* iOS 4.1- */
+/*}*/
+
+/*.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+/*.mobile{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}*/
+

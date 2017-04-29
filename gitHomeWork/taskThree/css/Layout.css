@@ -1,0 +1,121 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*让页面不出现滚动条*/
+
+body {
+	overflow: hidden;
+}
+
+
+/*头部*/
+
+header {
+	width: 100%;
+	height: 100px;
+	background: url(../img/Layout.jpg);
+	opacity: 0.4;
+}
+
+
+/*网页的主体部分*/
+
+article {
+	width: 100%;
+	height: 500px;
+	margin: 6px 0;
+	overflow: hidden;
+}
+
+
+/*主体的左侧部分*/
+
+.left {
+	background: #d7eda2;
+	width: 260px;
+	height: 20px;
+	float: left;
+	margin-left: -100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	box-sizing: border-box;
+}
+
+
+/*主体的中间部分*/
+
+.middle {
+	width: 100%;
+	height: 20px;
+	float: left;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+.inner {
+	margin-left: 270px;
+	margin-right: 190px;
+	background: #fff3d0;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+
+/*主体的右侧部分*/
+
+.right {
+	background: #f1eae4;
+	float: left;
+	width: 180px;
+	height: 20px;
+	margin-left: -180px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+
+/*网页主体的标题定义样式*/
+
+h2 {
+	margin-left: 20px;
+	/*margin-top: 20px;*/
+}
+
+
+/*给网页主体部分的标题重新定义位置*/
+
+.middle h2 {
+	margin-left: 40px;
+}
+
+
+/*网页中体部分的p便签*/
+
+.middle p {
+	text-indent: 2em;
+	margin: 20px;
+}
+
+
+/*网页主体部分的ul标签*/
+
+ul {
+	margin: 20px 60px;
+}
+
+ul li {
+	margin-top: 10px;
+}
+
+
+/*网页的页脚部分*/
+
+footer {
+	width: 100%;
+	height: 60px;
+	background: url(../img/Layout.jpg);
+	opacity: 0.3;
+}

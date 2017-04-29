@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院</title>
+    <link rel="stylesheet" href="css/jkIndex.css"/>
+    <script type="text/javascript">
+        window.onload = function () {
+            var aClose = document.getElementById('i-close');
+            var oDiv = document.getElementById('banner');
+            aClose.onclick = function () {
+                oDiv.style.display = 'none';
+            };
+        };
+    </script>
+</head>
+
+<body>
+<!--头部悬挂的按钮选项-->
+<div class="banner" id="banner">
+    <ul id="nav">
+        <li>
+            <img class="icon" src="img/newicon.png"/>
+            <a class="ul-a">线下面授班专场</a>
+        </li>
+        <li>
+            <img class="icon" src="img/hoticon.png"/>
+            <a class="ul-a">线上就业班专场</a>
+        </li>
+        <li>
+            <a class="ul-a">技能强化班专场</a>
+        </li>
+        <li>
+            <a class="ul-a">报名就抽iPhone7</a>
+        </li>
+
+    </ul>
+    <!--关闭按钮-->
+    <i class="i-close" id="i-close"></i>
+</div>
+
+<!--首页导航-->
+<div class="header">
+    <div class="nav">
+        <a class="logo">
+            <img src="img/logo.png" width="109px" height="40px"/>
+        </a>
+        <ul>
+            <li>
+                <a class="a-index" href="#">首页</a>
+            </li>
+            <li class="li-career">
+                <a href="#">职业学院&nbsp;
+                    <i class="arrow"></i>
+                </a>
+                <!--职业学院的下拉菜单-->
+                <div class="d-career" id="d-career">
+                    <h3>前端学院</h3>
+                    <a href="#">
+                        <i class="web-icon"></i> Web前端工程师
+                    </a>
+                    <h3>后端学院</h3>
+                    <a href="#">
+                        <i class="Pyhon-icon"></i> Pyhon Web工程师
+                    </a>
+                    <a href="#">
+                        <i class="Go-icon"></i> Go语言工程师
+                    </a>
+                    <h3>移动学院</h3>
+                    <a href="#">
+                        <i class="ios-icon"></i> ios前端工程师
+                    </a>
+                </div>
+            </li>
+            <li class="li-VIP">
+                <a href="#">会员课程&nbsp;
+                    <i class="arrow"></i>
+                </a>
+                <!--会员的下拉菜单-->
+                <div class="d-VIP" id="d-VIP">
+                    <a href="#"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+                    <a href="#"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+                    <a href="#"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+                    <a href="#"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+                    <a href="#"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+                    <a href="#"><i class="vip-icon"></i>VIP会员购买<span>30/月 260/年</span></a>
+                </div>
+            </li>
+            <li class="li-sq">
+                <a href="#">极客社区&nbsp;
+                    <i class="arrow"></i></a>
+                <!--极客社区的下拉菜单-->
+                <div class="d-sq" id="d-sq">
+                    <a href="#"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+                    <a href="#"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+                    <a href="#"><i class="sq-icon"></i>社群<span>7000+</span></a>
+                    <a href="#"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+                </div>
+            </li>
+        </ul>
+        <div class="header-right">
+            <span class="search-btn"></span>
+            <span class="download-btn">
+						<div class="download-code">
+						<em></em>
+						<i></i>
+							<img src="img/heade-rwm.png"/>
+						</div>
+					</span>
+            <span class="certificate-btn" id="certificate-btn">
+					<a>
+						<img src="img/default.gif" width="25px" height="25px"/>
+					</a>
+					<div class="certificate-div">
+						<em></em>
+						<i class="tri"></i>
+						<a>
+							<i class="cer-icon"></i>
+							<i class="vip-icon"></i>
+						</a>
+						<a>
+							<i class="study-center"></i>学习中心
+						</a>
+						<a>
+							<i class="person-index"></i>个人主页
+						</a>
+						<a>
+							<i class="message-inform"></i>消息告知
+						</a>
+						<a>
+							<i class="acount-set"></i>账号设置
+						</a>
+						<a>
+							<i class="quit"></i>退出登录
+						</a>
+					</div>
+				   </span>
+        </div>
+    </div>
+</div>
+<!--页面的主体部分-->
+<div class="pager">
+    <div class="pager-one">
+        <div class="pager-top">
+            <div class="slide">
+                <a class="slide-one" href="#"></a>
+                <div class="slide-count">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="login">
+                <div class="login-con">
+                    <div class="up">
+                        <div class="up-left">
+                            <a>
+                                <img src="img/default.gif" width="57px" height="57px"/>
+                            </a>
+                        </div>
+                        <div class="up-right">
+                            <span>qq_Foam泡沫</span>
+                            <p>
+                                <a class="a-cer">已认证</a>
+                                <a class="a-vip">VIP</a>
+                            </p>
+                        </div>
+                    </div>
+                    <a class="down-a">我的学习中心</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--极客就业班的信息-->
+    <div class="pager-two">
+        <div class="jy">
+            <a class="jiuyeBan" href="#">
+                <i></i> PHP工程师就业班
+            </a>
+            <a href="#">
+                WEB大前端工程师就业班
+            </a>
+            <a href="#">
+                Android工程师就业班
+            </a>
+            <a href="#">
+                iOS工程师就业班
+            </a>
+        </div>
+    </div>
+
+    <!--价格-->
+    <div class="pager-three">
+        <div class="price">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/three-1.jpg"/>
+                    </a>
+                    <div class="li-down">
+                        <p>『微信小程序』从基础到实战</p>
+                        <p>13小时 | 1门课</p>
+                        <span class="money">¥49.00</span>
+                        <s class="des">¥499.00</s>
+                        <span class="des">1523人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/three-2.jpg"/>
+                    </a>
+                    <div class="li-down">
+                        <p>基于Go语言的短连接服务实战</p>
+                        <p>10小时 | 1门课</p>
+                        <span class="money">¥499.00</span>
+                        <s class="des">¥1000.00</s>
+                        <span class="des">47人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/three-3.jpg"/>
+                    </a>
+                    <div class="li-down">
+                        <p>基于Python的爬虫实战</p>
+                        <p>13小时 | 1门课</p>
+                        <span class="money">¥499.00</span>
+                        <s class="des">¥1000.00</s>
+                        <span class="des">25人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/three-4.jpg"/>
+                    </a>
+                    <div class="li-down">
+                        <p>Vue.js前端框架详解－基础&进阶&实战</p>
+                        <p>23小时 | 1门课</p>
+                        <span class="money">¥499.00</span>
+                        <s class="des">¥1300.00</s>
+                        <span class="des">123人学习</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--职业学院-->
+    <div class="pager-four">
+        <div class="school">
+            <h2 class="pager-title">职业学院</h2>
+            <div class="school-con">
+                <div class="school-left">
+                    <a>
+                        <i class="schOne-icon"></i>
+                        <span>Web 前端工程师</span>
+                    </a>
+                </div>
+                <div class="school-right">
+                    <ul>
+                        <li>
+                            <a>
+                                <span>Python Web 工程师</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span>Go语言 工程师</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span>ios 工程师</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span>更多职业 敬请期待</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--会员课程-->
+    <div class="pager-five">
+        <div class="Vip-course">
+            <h2 class="pager-title">会员课程</h2>
+            <ul>
+                <li>
+                    <a class="course">
+                        <img src="img/1_android.png"/>
+                        <p>Android</p>
+                        <span>90门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/2_iOS.png"/>
+                        <p>ios</p>
+                        <span>51门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/3_swift.png"/>
+                        <p>Swift语言</p>
+                        <span>11门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/4_html5.png"/>
+                        <p>HTML开发</p>
+                        <span>116门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/5_javascript.png"/>
+                        <p>JavaScript</p>
+                        <span>90门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/6_js_c56bccc.png"/>
+                        <p>Node.js</p>
+                        <span>90门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/7_c_07f10c0.png"/>
+                        <p>C语言</p>
+                        <span>17门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/8_java_89b7c2c.png"/>
+                        <p>Java语言</p>
+                        <span>17门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/9_php.png"/>
+                        <p>PHP语言</p>
+                        <span>23门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/10_javaweb.png"/>
+                        <p>JavaWeb</p>
+                        <span>64门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/11_Python.png"/>
+                        <p>Python语言</p>
+                        <span>38门课程</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="course">
+                        <img src="img/12_cocos2d.png"/>
+                        <p>Cocos2d-游戏开发</p>
+                        <span>89门课程</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="down-a a-all">全部会员课程</a>
+        </div>
+    </div>
+    <!--学员故事-->
+    <div class="pager-six">
+        <div class="stu-story">
+            <h2 class="pager-title">学员故事</h2>
+            <div class="student">
+                <ul>
+                    <li>
+                        <a>
+                            <p class="though">从房地产营销策划转行前端工程师。努力并不是为了证明自己多厉害，只是对自己生活方式的一种选择， 每个人都可以通过自己的努力，去决定自己生活的样子。
+                                <em></em>
+                                <i></i>
+                            </p>
+
+                            <div class="student-infor">
+                                <img src="img/student-1.jpg"/>
+                                <p>朱华宇</p>
+                                <span>入职 极客学院</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <p class="though">从浑浑噩噩的自动化专业学生，到大三暑假进入研究院实习。当时努力克服的那些困难， 都成了现在自己的资本和财富。
+                                <em></em>
+                                <i></i>
+                            </p>
+
+                            <div class="student-infor">
+                                <img src="img/student-2.jpg"/>
+                                <p>黄文俊</p>
+                                <span>入职 深圳北斗技术应用研究院</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <p class="though">电力工程设计转前端，很感谢极客学院给了我理想的转行准备。以高密度锻炼的方式，
+                                逼迫自己尽快熟悉团队开发模式，顺利进入程序员的世界，接触到的新技术拓宽了我的眼界。
+                                <em></em>
+                                <i></i>
+                            </p>
+
+                            <div class="student-infor">
+                                <img src="img/student-3.jpg"/>
+                                <p>黄浩博</p>
+                                <span>入职 北京中科软科技股份有限公司</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-mark">
+                <span class="mark-s now"></span>
+                <span class="mark-s"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-con">
+        <div class="con-top">
+            <div class="conUp-L">
+                <img src="img/jk-logo-footer.png"/>
+                <p>极客学院，编程是一种信仰</p>
+            </div>
+            <div class="conUp-M">
+                <table style="table-layout:fixed;">
+                    <tr>
+                        <th>职业学院</th>
+                        <th>会员课程</th>
+                        <th>极客社区</th>
+                        <th>其他</th>
+                    </tr>
+                    <tr>
+                        <td>Web 前端工程师</td>
+                        <td>课程库</td>
+                        <td>技术问答</td>
+                        <td>关于我们</td>
+                    </tr>
+                    <tr>
+                        <td>Python Web工程师</td>
+                        <td>只是体系图</td>
+                        <td>WiKi</td>
+                        <td>使用指南</td>
+                    </tr>
+                    <tr>
+                        <td>Go语言工程师</td>
+                        <td>职业路径图</td>
+                        <td>资源下载</td>
+                        <td>假如我们</td>
+                    </tr>
+                    <tr>
+                        <td>ios工程师</td>
+                        <td>系列课程</td>
+                        <td>社群</td>
+                        <td>联系我们</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>课程标签</td>
+                        <td></td>
+                        <td>友情链接</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="conUp-R">
+                <p class="tel">服务热线:400-678-8266</p>
+                <div class="down down-ios">iphone
+                    <img class="down-ios-img" src="img/app.png"/>
+                </div>
+                <div class="down down-and">Android
+                    <img class="down-and-img" src="img/app.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="con-down">
+					<span class="cor-icon">
+					 	<a><i class="sina"></i></a>
+		          	<a><i class="wechat"></i></a>
+		          </span>
+            <p>Copyright © 2013-2016
+                <a href="#">jekexueyuan.com</a> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+            </p>
+            <a><img src="img/cert.png" width="60px"/></a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

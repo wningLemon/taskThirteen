@@ -1,0 +1,48 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: url(../img/bg.jpg);
+}
+/*内容底下的div*/
+.container-outer {
+	width: 60%;
+	margin: 100px auto;
+	background: #fafafa;
+	z-index: -3;
+	transform: rotate(2deg);
+	box-shadow: 0px 2px 5px rgba(105, 108, 109, 0.7);
+}
+/*内容*/
+.container {
+	width: 100%;
+	background: #fafafa;
+	transform: rotate(-2deg);
+	box-sizing: border-box;
+	padding: 20px;
+	box-shadow: 0px 2px 5px rgba(105, 108, 109, 0.7);
+	/*opacity: 0.4;*/
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 20px;
+	color: #333;
+	margin: 10px;
+}
+
+h3{
+	font-weight: normal;
+	font-size: 17px;
+	color: #333;
+	margin: 10px;
+}
+p {
+	text-indent: 2em;
+	color: #666;
+	margin: 5px;
+	font-size: 15px;
+	line-height: 20px;
+}

@@ -1,0 +1,28 @@
+table {
+	text-align: center;
+	border-collapse: collapse;
+	font-family: Arial;
+	width: 400px;
+	margin: auto;
+}
+
+table caption {
+	padding-top: 3px;
+	padding-bottom: 2px;
+	font: bold 1.1em;
+	border: 1px solid black;
+}
+table td {
+	padding: 5px;
+}
+
+table tr:hover {
+	background-color: #c4e4ff;
+}
+
+table tr:hover .time {
+	background: #FFFFFF;
+}
+.time1:hover {
+	background: #FFFFFF;
+}

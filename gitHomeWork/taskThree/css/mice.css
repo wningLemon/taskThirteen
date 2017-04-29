@@ -1,0 +1,287 @@
+body {
+	background-color: #464747;
+}
+
+.view {
+	width: 220px;
+	height: 220px;
+	margin: 120px auto;
+	display: -moz-box;
+	display: -webkit-box;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+
+/*定义脸部的大小及样式*/
+
+.face {
+	width: 146px;
+	height: 146px;
+	background: #8f9595;
+	border-radius: 50%;
+}
+
+
+/*左耳朵*/
+
+.leftEar {
+	position: relative;
+	top: -25px;
+	left: -30px;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #e5a960;
+	border: 10px solid #6e6f71;
+}
+
+
+/*右耳朵*/
+
+.rightEar {
+	position: relative;
+	top: -100px;
+	left: 100px;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #e5a960;
+	border: 10px solid #6e6f71;
+}
+
+
+/*左眼的外圈*/
+
+.leftEye {
+	position: relative;
+	top: -115px;
+	left: 30px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+
+/*左眼的黑眼球*/
+
+.leftEye-black {
+	position: relative;
+	top: 12px;
+	left: 10px;
+	width: 13px;
+	height: 13px;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+
+/*右眼外圈*/
+
+.rightEye {
+	position: relative;
+	top: -145px;
+	left: 85px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+
+/*右眼黑眼球*/
+
+.rightEye-black {
+	position: relative;
+	top: 12px;
+	left: 10px;
+	width: 13px;
+	height: 13px;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+
+/*胡须的位置*/
+
+.beard {
+	position: relative;
+	top: -140px;
+	left: 15px;
+	width: 115px;
+	height: 25px;
+}
+
+
+/*每条胡须的样式*/
+
+.beard span {
+	position: absolute;
+	left: 5px;
+	top: 13px;
+	display: block;
+	width: 105px;
+	height: 30px;
+	border-top: 1px solid black;
+}
+
+
+/*第一条胡须的位置*/
+
+.beard .beard-1 {
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+}
+
+
+/*第二条胡须的位置*/
+
+.beard .beard-2 {
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+}
+
+
+/*鼻子*/
+
+.nose {
+	position: relative;
+	top: -158px;
+	left: 56px;
+	width: 0px;
+	height: 0px;
+	border-left: 18px solid #6e6e6e;
+	border-right: 18px solid #6e6e6e;
+	border-top: 36px solid #6e6e6e;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+
+/*牙齿*/
+
+.teeth {
+	position: relative;
+	top: -150px;
+	left: 55px;
+	width: 36px;
+	height: 24px;
+}
+
+
+/*每颗牙齿的大小*/
+
+.teeth div {
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 16px;
+	background: #fff;
+}
+
+.teeth-1 {
+	left: 8px;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+}
+
+.teeth-2 {
+	left: 20px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+}
+
+
+/*定义眼睛动画*/
+
+.leftEye-black,
+.rightEye-black {
+	animation-name: animation;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes animation {
+	from,
+	to {}
+	50% {
+		-webkit-transform: translateX(6px);
+	}
+	90% {
+		-webkit-transform: translateX(-6px);
+	}
+}
+
+@-moz-keyframes animation {
+	from {}
+	to {}
+	50% {
+		-moz-transform: translateX(6px);
+	}
+	90% {
+		-moz-transform: translateX(-6px);
+	}
+}
+
+
+/*定义胡须动画*/
+
+.beard-1,
+.beard-2,
+.beard-3 {
+	animation-name: animation1;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes animation1 {
+	from,
+	to {}
+	15% {
+		border-radius: 30%;
+	}
+	30% {
+		border-radius: 40%;
+	}
+	50% {
+		border-radius: 50%;
+	}
+	65% {
+		border-radius: 40%;
+	}
+	80% {
+		border-radius: 30%;
+	}
+	100% {
+		border-radius: 10%;
+	}
+}
+
+@-moz-keyframes animation1 {
+	from {}
+	to {}
+	15% {
+		border-radius: 30%;
+	}
+	30% {
+		border-radius: 40%;
+	}
+	50% {
+		border-radius: 50%;
+	}
+	65% {
+		border-radius: 40%;
+	}
+	80% {
+		border-radius: 30%;
+	}
+	100% {
+		border-radius: 10%;
+	}
+}

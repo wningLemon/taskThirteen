@@ -1,0 +1,50 @@
+.table-div {
+	width: 380px;
+	height: 380px;
+	margin: 100px auto;
+	background: linear-gradient(#9dd2ea, #8bceec);
+	background: -o-linear-gradient(#9dd2ea, #8bceec);
+	background: -webkit-linear-gradient(#9dd2ea, #8bceec);
+	background: -moz-linear-gradient(#9dd2ea, #8bceec);
+	border-radius: 5px;
+	box-shadow: 0 7px 8px #0000ff;
+}
+
+table {
+	position: relative;
+	top: 20px;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	text-align: center;
+	border-collapse: collapse;
+	font-family: Arial;
+	/*border: 3px solid black;*/
+}
+
+#text {
+	border: 3px solid white;
+	padding: 10px;
+	margin-left: 6px;
+	margin-right: 6px;
+	text-align: right;
+	font-size: 18px;
+	height: 45px;
+	box-sizing: border-box;
+}
+
+table input {
+	text-align: center;
+	width: 70px;
+	height: 45px;
+	border: 0px;
+	font-size: 18px;
+	border-radius: 3px;
+	box-shadow: 0 5px 1px #999;
+}
+
+table input:hover {
+	color: white;
+	background-color: #87cefa;
+	box-shadow: 0 5px 1px #1e90ff;
+}

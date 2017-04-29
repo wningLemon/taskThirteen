@@ -1,0 +1,247 @@
+h1 {
+				text-align: center;
+				margin-top: 40px;
+			}
+			/*给最外外边大div定义样式*/
+			
+			#view {
+				width: 160px;
+				height: 160px;
+				margin: 200px auto 0 auto;
+			}
+			/*给立方体的六个面的div定义样式*/
+			
+			#box div {
+				position: absolute;
+				width: 160px;
+				height: 160px;
+				opacity: 0.9;
+			}
+			/*第一个面的样式*/
+			
+			#box .one div {
+				position: relative;
+				display: inline-block;
+				float: left;
+				width: 52px;
+				height: 52px;
+				border-radius: 3px;
+				background-color: #AFEEEE;
+			}
+			/*调整第一个面中各个小div的位置*/
+			
+			#one-1,
+			#one-2,
+			#one-4,
+			#one-5,
+			#one-7,
+			#one-8 {
+				margin-right: 2px;
+			}
+			
+			#one-4,
+			#one-5,
+			#one-6 {
+				margin-top: 2px;
+				margin-bottom: 2px;
+			}
+			/*第二个面的样式*/
+			
+			#box .two div {
+				position: relative;
+				display: inline-block;
+				float: left;
+				width: 52px;
+				height: 52px;
+				border-radius: 3px;
+				background-color: #ff0000;
+			}
+			/*调整第二个面中各个小div的位置*/
+			
+			#two-1,
+			#two-2,
+			#two-4,
+			#two-5,
+			#two-7,
+			#two-8 {
+				margin-right: 2px;
+			}
+			
+			#two-4,
+			#two-5,
+			#two-6 {
+				margin-top: 2px;
+				margin-bottom: 2px;
+			}
+			/*第三个面的样式*/
+			
+			#box .three div {
+				position: relative;
+				display: inline-block;
+				float: left;
+				width: 52px;
+				height: 52px;
+				border-radius: 3px;
+				background-color: #00ff00;
+			}
+			/*调整第三个面中各个小div的位置*/
+			
+			#three-1,
+			#three-2,
+			#three-4,
+			#three-5,
+			#three-7,
+			#three-8 {
+				margin-right: 2px;
+			}
+			
+			#three-4,
+			#three-5,
+			#three-6 {
+				margin-top: 2px;
+				margin-bottom: 2px;
+			}
+			/*第四个面的样式*/
+			
+			#box .four div {
+				position: relative;
+				display: inline-block;
+				float: left;
+				width: 52px;
+				height: 52px;
+				border-radius: 3px;
+				background-color: #0000ff;
+			}
+			/*调整第四个面中各个小div的位置*/
+			
+			#four-1,
+			#four-2,
+			#four-4,
+			#four-5,
+			#four-7,
+			#four-8 {
+				margin-right: 2px;
+			}
+			
+			#four-4,
+			#four-5,
+			#four-6 {
+				margin-top: 2px;
+				margin-bottom: 2px;
+			}
+			/*第五个面的样式*/
+			
+			#box .five div {
+				position: relative;
+				display: inline-block;
+				float: left;
+				width: 52px;
+				height: 52px;
+				border-radius: 3px;
+				background-color: #9370DB;
+			}
+			/*调整第五个面中各个小div的位置*/
+			
+			#five-1,
+			#five-2,
+			#five-4,
+			#five-5,
+			#five-7,
+			#five-8 {
+				margin-right: 2px;
+			}
+			
+			#five-4,
+			#five-5,
+			#five-6 {
+				margin-top: 2px;
+				margin-bottom: 2px;
+			}
+			/*第六个面的样式*/
+			
+			#box .six div {
+				position: relative;
+				display: inline-block;
+				float: left;
+				width: 52px;
+				height: 52px;
+				border-radius: 3px;
+				background-color: #FFFF00;
+			}
+			/*调整第六个面中各个小div的位置*/
+			
+			#six-1,
+			#six-2,
+			#six-4,
+			#six-5,
+			#six-7,
+			#six-8 {
+				margin-right: 2px;
+			}
+			
+			#six-4,
+			#six-5,
+			#six-6 {
+				margin-top: 2px;
+				margin-bottom: 2px;
+			}
+			/*使每个面通过transform属性转变成立方体*/
+			
+			#box .one {
+				-webkit-transform: translateZ(80px);
+			}
+			
+			#box .two {
+				-webkit-transform: translateZ(-80px);
+			}
+			
+			#box .three {
+				-webkit-transform: rotateY(90deg) translateZ(80px);
+			}
+			
+			#box .four {
+				-webkit-transform: rotateY(-90deg) translateZ(80px);
+			}
+			
+			#box .five {
+				-webkit-transform: rotateX(-90deg) translateZ(80px);
+			}
+			
+			#box .six {
+				-webkit-transform: rotateX(90deg) translateZ(80px);
+			}
+			/*给包含六个面的div定义动画*/
+			
+			#box {
+				animation-name: animation;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: infinite;
+				animation-duration: 10s;
+				transform-style: preserve-3d;
+				/*perspective: 1300px;*/
+				/*perspective-origin: 50% 50%;*/
+				/*transform-origin: 80px 80px 0;*/
+			}
+			
+			@-webkit-keyframes animation {
+				from,
+				to {}
+				15% {
+					-webkit-transform: rotateY(-135deg);
+				}
+				30% {
+					-webkit-transform: rotateY(-90deg) rotateZ(135deg);
+				}
+				45% {
+					-webkit-transform: rotateY(225deg) rotateZ(135deg);
+				}
+				60% {
+					-webkit-transform: rotateY(135deg) rotateX(135deg);
+				}
+				75% {
+					-webkit-transform: rotateX(135deg) rotateY(225deg);
+				}
+				90% {
+					-webkit-transform: rotateX(-135deg);
+				}
+			}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="table-div">
+			<table>
+				<tr>
+					<td colspan="4"><div id="text">0</div></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="CE" onclick="ce()" disabled="disabled"></td>
+					<td><input type="button" value="C" onclick="cancel()"></td>
+					<td><input type="button" value="←" onclick="del()"></td>
+					<td><input type="button" value="/" onclick="show(this)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="7" onclick="show(this)"></td>
+					<td><input type="button" value="8" onclick="show(this)"></td>
+					<td><input type="button" value="9" onclick="show(this)"></td>
+					<td><input type="button" value="*" onclick="show(this)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="4" onclick="show(this)"></td>
+					<td><input type="button" value="5" onclick="show(this)"></td>
+					<td><input type="button" value="6" onclick="show(this)"></td>
+					<td><input type="button" value="-" onclick="show(this)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="1" onclick="show(this)"></td>
+					<td><input type="button" value="2" onclick="show(this)"></td>
+					<td><input type="button" value="3" onclick="show(this)"></td>
+					<td><input type="button" value="+" onclick="show(this)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="+/-" disabled="disabled"></td>
+					<td><input type="button" value="0" onclick="show(this)"></td>
+					<td><input type="button" value="." onclick="show(this)"></td>
+					<td><input type="button" value="=" onclick="calculate()"></td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>
